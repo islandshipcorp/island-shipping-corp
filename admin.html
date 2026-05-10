@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - Island Shipping Corporation</title>
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body>
+    <div class="login-container" id="loginContainer">
+        <div class="login-box">
+            <img src="logo.png" alt="ISC Logo" class="login-logo">
+            <h2>Admin Login</h2>
+            <p class="subtitle">Island Shipping Corporation</p>
+            
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required placeholder="Enter username">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter password">
+                </div>
+                
+                <div class="error-message" id="errorMessage"></div>
+                
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+            
+            <a href="index.html" class="back-link">← Back to Main Site</a>
+        </div>
+    </div>
+
+    <div class="admin-panel" id="adminPanel">
+        <header class="admin-header">
+            <div class="admin-nav">
+                <img src="logo.png" alt="ISC Logo" class="admin-logo">
+                <h1>Admin Dashboard</h1>
+                <button class="logout-btn" id="logoutBtn">Logout</button>
+            </div>
+        </header>
+
+        <main class="admin-content">
+            <div class="admin-section">
+                <h2>Edit Routes</h2>
+                <div class="routes-admin" id="routesAdmin">
+                    <!-- Routes will be loaded here -->
+                </div>
+                <button class="add-route-btn" id="addRouteBtn">+ Add New Route</button>
+            </div>
+
+            <div class="admin-section">
+                <h2>Preview</h2>
+                <div class="preview-container">
+                    <a href="index.html" target="_blank" class="preview-btn">View Live Website →</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="admin-script.js"></script>
+</body>
+</html>
